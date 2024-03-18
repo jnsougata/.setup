@@ -1,3 +1,12 @@
+# git setup
+echo "Enter GitHub username: "
+read username
+echo "Enter GitHub email: "
+read email
+git config --global user.name $username
+git config --global user.email $email
+git config --global init.defaultBranch main
+
 # build essentials
 sudo apt-get update
 sudo apt-get install build-essential -y
