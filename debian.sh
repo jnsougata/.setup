@@ -2,7 +2,6 @@ sudo apt-get update
 sudo apt-get install curl wget -y
 sudo apt-get install snapd -y
 sudo apt-get install python3-pip -y
-sudo apt-get install jq -y
 echo "Enter your github username: "
 read username
 echo "Downloading avatar... to ~/Downloads/avatar.png"
