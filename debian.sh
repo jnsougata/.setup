@@ -17,9 +17,6 @@ git config --global user.email $email
 echo "Git email set to $email"
 git config --global init.defaultBranch main
 echo "Git default branch set to main"
-echo "Downloading wallpaper... to ~/Downloads/wallpaper.png"
-sudo wget -O ~/Downloads/wallpaper.png "https://filebox-1-q0603932.deta.app/embed/729f96e97c6d41c39e34c66d21024fa0"
-gsettings set org.gnome.desktop.background picture-uri "file:///home/$USER/Downloads/wallpaper.png"
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-previews'
 sudo apt-get install build-essential -y
 sudo wget -O /tmp/chrome.deb "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
@@ -34,8 +31,6 @@ sudo wget -O /tmp/vscode.deb "https://go.microsoft.com/fwlink/?LinkID=760868"
 sudo dpkg -i /tmp/vscode.deb
 sudo apt-get install -f
 sudo rm /tmp/vscode.deb
-curl -fsSL https://get.deta.dev/space-cli.sh | sh
-ln -s ~/.deta/bin/space /usr/local/bin/space
 sudo apt-get install golang-go -y 
 go install golang.org/x/tools/gopls@latest
 go install golang.org/x/tools/cmd/goimports@latest
